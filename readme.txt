@@ -3,7 +3,7 @@ Assignment #3
 Task 1 - services.js
 	- corporateFactory, getLeaders/getLeader
 	- getPromotion
-	
+    
 Task 2 - controllers.js
 	- IndexController
 	- AboutController
