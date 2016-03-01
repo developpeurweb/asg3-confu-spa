@@ -253,11 +253,11 @@ angular.module('confusionApp')
 
 
             corpfac.getLeaders = function() {
-                return leaders;
+                return leadership;
             };
 
-            corpfac.getLeader = function(index) {
-                return leaders[index];
+            corpfac.getLeader = function (index) {
+                return leadership[index];
             };
 
             return corpfac;
