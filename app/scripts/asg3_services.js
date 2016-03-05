@@ -187,14 +187,15 @@ angular.module('confusionApp')
             ];
 
                 this.getDishes = function(){
-
                     return dishes;
-
                 };
 
                 this.getDish = function (index) {
-
                     return dishes[index];
+                };
+
+                this.getFeatured = function (index) {
+                    return dishes[0];
                 };
 
                 // implement a function named getPromotion
@@ -260,7 +261,13 @@ angular.module('confusionApp')
                 return leadership[index];
             };
 
+            corpfac.getSpecialist = function (index) {
+                return leadership[3];
+            };
+
             return corpfac;
+
+
 
 
         })
