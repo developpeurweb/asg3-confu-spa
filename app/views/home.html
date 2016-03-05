@@ -6,8 +6,23 @@
                 <h3 align=center>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-				<h4>Implement the Featured Dish Here</h4>
+
+            <h4>Implement the Featured Dish Here</h4>
+
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img class="media-object img-thumbnail" ng-src={{featured.image}} alt="Uthappizza">
+                </div>
+                <div class="media-body">
+                    <h2 class="media-heading">{{featured.name}}
+                        <span class="label label-danger">{{featured.label}}</span>
+                        <span class="badge">{{featured.price}}</span>
+                    </h2>
+                    <p>{{featured.description}}</p>
+                    <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                </div>
             </div>
+
         </div>
 
 
@@ -18,6 +33,20 @@
             </div>
             <div class="col-xs-12 col-sm-9">
 				<h4>Implement the Promotion Here</h4>
+
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <img class="media-object img-thumbnail" ng-src={{promotion.image}} alt="Uthappizza">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{promotion.name}}
+                            <span class="label label-danger">{{promotion.label}}</span>
+                            <span class="badge">{{promotion.price}}</span>
+                        </h2>
+                        <p>{{promotion.description}}</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -27,16 +56,16 @@
                 <h3 align=center>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-				    <li class="media" ng-repeat="leader in leaders">
+				    <div class="media">
                           <div class="media-left media-middle">
-                                <img class="media-object img-thumbnail" ng-src={{leader.image}} alt="">
+                                <img class="media-object img-thumbnail" ng-src={{specialist.image}} alt="">
                             </div>
 		                    <div class="media-body">
-		                        <h2 class="media-heading">{{leader.name}}
-		                         <span class="label">{{leader.designation}}</span>
-		                         <p >{{leader.description}}</p>
+		                        <h2 class="media-heading">{{specialist.name}}
+		                         <span class="label">{{specialist.designation}}</span>
+		                         <p >{{specialist.description}}</p>
 		                    </div>
-		          </li>
+		          </div>
             </div>
         </div>
     </div>

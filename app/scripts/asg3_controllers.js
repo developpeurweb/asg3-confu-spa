@@ -97,18 +97,23 @@ angular.module('confusionApp')
 
        .controller('IndexController',  ['$scope', 'menuFactory', 'corporateFactory', function($scope, menuFactory, corporateFactory) {
 
-            $scope.dish = menuFactory.getDishes().get({id:0});
-            $scope.promotion = menuFactory.getPromotion().get({id:0});
-            $scope.leader = corporateFactory.getLeaders().get({id:3});
+           var featured = menuFactory.getDishes().get({id:0});
+           $scope.featured = featured;
+
+           var promotion = menuFactory.getPromotion().get({id:0});
+           $scope.promotion = promotion;
+
+           var specialist = corporateFactory.getLeaders().get({id:3});
+           $scope.specialist = specialist;
+
 
         }])
 
 
         .controller('AboutController', ['$scope', 'corporateFactory', function($scope, corporateFactory){
 
-            $scope.leaders = corporateFactory.getLeaders();
-            $scope.leaders = leaders;
-
+            var leaders = corporateFactory.getLeaders();
+           $scope.leaders = leaders;
 
         }])
 
